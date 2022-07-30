@@ -20,7 +20,7 @@ class Searching
         for(i=0;i<n;i++)
         {
             if(a[i]==temp)
-            cout<<"No. "<<temp<<" is at position "<<i+1;
+            cout<<"No. "<<temp<<" is at position "<<i+1<<endl;
         }
     }
 };
