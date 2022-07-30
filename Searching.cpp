@@ -13,7 +13,7 @@ class Searching
         for(i=0;i<n;i++)
         cin>>a[i];
     }
-    /*void Sequential()
+    void Sequential()
     {
         cout<<"Which no. you want from array:";
         cin>>temp;
@@ -22,7 +22,7 @@ class Searching
             if(a[i]==temp)
             cout<<"No. "<<temp<<" is at position "<<i+1<<endl;
         }
-    }*/
+    }
     void binary()
     {
         mid=n/2;
@@ -47,7 +47,7 @@ class Searching
 int main()
 {
     Searching s;
-    //s.Sequential();
+    s.Sequential();
     s.binary();
     return 0;
 }
