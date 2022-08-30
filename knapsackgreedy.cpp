@@ -22,6 +22,7 @@ class Knapsack{
         for(i=0;i<n;i++)
         d[i]=(float)(v[i]/w[i]);
         //Arranging according to density
+        cout<<endl;
         for(i=0;i<n;i++)
         {
             for(j=0;j<n-1;j++)
@@ -42,7 +43,7 @@ class Knapsack{
         }
         for(i=0;i<n;i++)
         {
-            cout<<w[i]<<"\t"<<v[i]<<"\t"<<(float)(d[i])<<endl;
+            cout<<w[i]<<"\t"<<v[i]<<"\t"<<d[i]<<endl;
         }
         for(i=0;i<n;i++)
         {
@@ -51,7 +52,7 @@ class Knapsack{
                 cw+=w[i];
                 m+=v[i];
             }
-            else if(cw!=W)
+            else if(cw<=W)
             {
                 k=W-cw;
                 m+=(k*d[i]);
