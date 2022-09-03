@@ -52,13 +52,12 @@ class Knapsack{
                 cw+=w[i];
                 m+=v[i];
             }
-            else if(cw<=W)
+            else
             {
                 k=W-cw;
+                cw+=k;
                 m+=(k*d[i]);
             }
-            else 
-            break;
         }
         cout<<endl<<"Total profit = "<<m;
     }
